@@ -1,0 +1,9 @@
+node_modules/
+branches/
+hooks/
+.idea/
+info/
+objects/
+refs/
+src/
+public/

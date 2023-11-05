@@ -1,0 +1,44 @@
+@import "src/scss/default_variables";
+.related_post{
+  img{
+    border-radius: 10px;
+  }
+  span:not(.swiper-pagination-bullet){
+    display: block;
+    color: #777;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.24px;
+    margin: 12px 0;
+  }
+  h3{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    max-width: 188px;
+  }
+}
+
+@media screen  and (max-width: 756px){
+  .related_post {
+    .swiper-wrapper{
+      height: auto;
+    }
+    .swiper-pagination{
+      position: relative;
+      margin: 20px auto;
+    }
+  }
+}
+@media screen  and (max-width: 450px){
+  .swiper-slide {
+    img {
+      display: block;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+}

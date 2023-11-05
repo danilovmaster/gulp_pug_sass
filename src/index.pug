@@ -1,0 +1,22 @@
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title= "Pug. Начало работы"
+    link(rel='stylesheet' href='/public/style.min.css')
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css")
+
+  body
+      include components/header/header
+      include components/js-road/js-road
+      include components/server-side-js/server-side-js
+      include components/bill/bill
+      include components/conclusion/conclusion
+      include components/grade/grade
+      include components/related-posts/related-posts
+      include components/pop-up/pop-up
+      script(src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js')
+      script(src='/public/index.min.js')

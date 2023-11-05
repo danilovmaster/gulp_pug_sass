@@ -1,0 +1,23 @@
+.js-road{
+  p{
+    font-size: 14px;
+  }
+  .container {
+    position: relative;
+
+    &:after {
+      content: url('/pug/public/images/svg/stack/sprite.svg#triangle');
+      position: absolute;
+      bottom: 32px;
+      left: 77px;
+      width: 28px;
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 756px){
+  .js-road{
+    overflow-x: scroll;
+  }
+}

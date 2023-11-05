@@ -1,0 +1,29 @@
+-
+    const nav_menu = [
+        {'Статьи': [
+            'Cтатья 1',
+            'Cтатья 2',
+            'Cтатья 3',
+            ]},
+        {'Курсы': [
+            'JavaScript Pro',
+            'JavaScript для новичков',
+            'JavaScript ниндзя'
+            ]},
+        'Новости',
+        'О нас'
+    ]
+nav.header__nav.grid
+    ul.grid
+      for i in nav_menu
+          if (typeof i == 'object')
+            li.header__nav__extend.arrow
+                a(href="#") #{Object.keys(i)}
+                ul
+                  each j in Array.from(...Object.values(i))
+                      li
+                        a(href='#') #{j}
+          else
+              li
+                a(href="#") #{i}
+    include ./button

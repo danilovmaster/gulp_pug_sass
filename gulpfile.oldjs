@@ -1,0 +1,13 @@
+const gulp = require('gulp');
+const requireDir = require('require-dir');
+const tasks = requireDir('./tasks');
+
+exports.bs = tasks.bs;
+exports.libs_styles = tasks.libs_styles;
+exports.pages = tasks.pages;
+exports.rastr = tasks.rastr;
+exports.style = tasks.style;
+exports.svg_css = tasks.svg_css;
+exports.svg_sprite = tasks.svg_sprite;
+exports.watch = tasks.watch;
+exports.webp = tasks.webp;

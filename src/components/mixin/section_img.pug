@@ -1,0 +1,22 @@
+mixin section_img(arg)
+    - const { cls, h2, h1, img, p } = arg
+    section(class = cls)
+        .container
+            if (h2)
+                h2 #{h2}
+            else
+                h1 #{h1}
+            if (typeof img == 'object')
+                .grid
+                    each i in img
+                        div
+                            img(src='/public/images/'+ i['src'] )
+                            span #{i['date']}
+                            h3 #{i['h3']}
+            else
+                img(src='/public/images/'+img)
+            if (p)
+              p #{p}
+
+
+

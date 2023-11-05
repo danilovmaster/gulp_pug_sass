@@ -1,0 +1,28 @@
+-
+    const related_post = {
+        cls : 'related_post',
+        h2 : 'Похожие посты',
+        img : [
+            {
+                'src': 'react-book.webp',
+                'alt': 'События жизненного цикла ReactJS',
+                'date': '12 декабря',
+                'h3': 'События жизненного цикла ReactJS'
+            },
+            {
+                'src': 'css-grid-book.webp',
+                'alt': 'CSS Grids. Полное руководство',
+                'date': '10 декабря',
+                'h3': 'CSS Grids. Полное руководство'
+            },
+            {
+                'src': 'js-book.webp',
+                'alt': 'Асинхронность в JavaScript',
+                'date': '5 декабря',
+                'h3': 'Асинхронность в JavaScript'
+            },
+        ]
+    }
+
+include ../mixin/section_img
++section_img(related_post)

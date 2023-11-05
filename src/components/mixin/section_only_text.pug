@@ -1,0 +1,8 @@
+mixin section_only_text(arg)
+    - const { cls, h2, p, author } = arg
+    section(class = cls)
+        .container
+            h2 #{h2}
+            p #{p}
+            if (author)
+                span(class = cls + '_author') #{author}

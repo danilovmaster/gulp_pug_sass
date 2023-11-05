@@ -1,0 +1,30 @@
+section.grade.grey-bg
+    .container.gride
+        h2 Что вы думаете об этой книге?
+        h3.-h3 Оцените статью
+        .grade__stars.grid
+            span 4
+            ul.grid
+                - for (let i = 0; i <= 3; i++)
+                    li
+                        img(src='images/svg/stack/sprite.svg#star')
+                li
+                    img(src='images/svg/stack/sprite.svg#star_grey')
+        form.grid
+            input(type='text', placeholder='имя', value='')
+            input(type='mail', placeholder='Email', value='')
+            .arrow
+                select
+                    -
+                        let items = [
+                            'Выберите книгу',
+                            'JavaScript ниндзя',
+                            'Pragmatic Guide to JavaScript',
+                            'Pro JavaScript Techniques',
+                            'Выразительный JavaScript'
+                        ]
+                    each i in items
+                        option(value=i) #{i}
+                        if (i=='Выберите книгу')
+                                option(value=i, selected) #{i}
+            textarea Ваш отзыв

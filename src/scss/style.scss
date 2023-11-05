@@ -1,0 +1,108 @@
+@import "default_variables";
+body {
+  padding: 0;
+  margin: 0;
+  color: $font;
+  font-family: 'Onest', sans-serif;
+  font-style: normal;
+  background: #F8F8FA;
+}
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 30px;
+  align-items: center;
+}
+.container{
+  max-width: 738px;
+  margin: auto;
+}
+section{
+  margin: 0 auto;
+  padding: 30px 0 80px;
+}
+.grey-bg{
+  background: $grey;
+}
+ul{
+  list-style: none;
+}
+a{
+  color: $font;
+  text-decoration: none;
+}
+h1{
+  color: $font;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 92.308% */
+  letter-spacing: -1.04px;
+}
+h2{
+  color: $font;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: -0.56px;
+}
+.blue{
+  background: $main-blue;
+}
+button.blue{
+  padding: 10px 20px 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  transition: all 1s ease-in;
+  cursor: pointer;
+  &:hover{
+    background: $white;
+    color: $main-blue;
+  }
+}
+.arrow{
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    mask: url('/pug/public/images/svg/stack/sprite.svg#arrow_down') no-repeat 50% 50%;
+    mask-size: cover;
+    right: -20px;
+    width: 10px;
+    top: 8px;
+    display: block;
+    transition: all 0.25s ease-in-out;
+    height: 8px;
+    background: $font;
+    z-index: 10;
+  }
+    &:hover:after {
+      transform: rotate(180deg);
+      background: $main-blue;
+    }
+}
+@media screen and (max-width: 765px){
+  .container{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .grid{
+    grid-auto-flow: row;
+  }
+  h2{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px; /* 136.364% */
+    letter-spacing: -0.22px;
+  }
+}

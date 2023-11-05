@@ -1,0 +1,134 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Pug. Начало работы</title>
+    <link rel="stylesheet" href="/public/style.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container grid">
+        <div class="logo"><img src="images/svg/stack/sprite.svg#logo"/></div><span class="header__mobile"></span>
+        <nav class="header__nav grid">
+          <ul class="grid">
+            <li class="header__nav__extend arrow"><a href="#">Статьи</a>
+              <ul>
+                <li><a href="#">Cтатья 1</a></li>
+                <li><a href="#">Cтатья 2</a></li>
+                <li><a href="#">Cтатья 3</a></li>
+              </ul>
+            </li>
+            <li class="header__nav__extend arrow"><a href="#">Курсы</a>
+              <ul>
+                <li><a href="#">JavaScript Pro</a></li>
+                <li><a href="#">JavaScript для новичков</a></li>
+                <li><a href="#">JavaScript ниндзя</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+          <button class="blue">Начать учиться</button>
+        </nav>
+      </div>
+    </header>
+        <section class="js-road">
+          <div class="container">
+            <h1>Путь JavaScript</h1><img src="/public/images/books-1.webp"/>
+            <p>Можно выделить три основных направления для прогресса JavaScript </p>
+          </div>
+        </section>
+        <section class="server-side-js">
+          <div class="container">
+            <h2>Серверный JavaScript</h2>
+            <p>Разработчики и клиенты часто неправильно понимают,
+        что такое система. Они видят графический интерфейс и думают,
+        что он и есть система. Они определяют систему в терминах графического интерфейса и считают,
+        что должны сразу начать работу с графическим интерфейсом.
+        Они не понимают важнейшего принципа: ввод/вывод не важен.</p><span class="server-side-js_author">— Р. Мартин</span>
+          </div>
+        </section>
+    <div class="bill grey-bg">
+      <div class="container"><img src="/public/images/bill.webp" alt="реклама"/>
+        <p>Реклама на<a href="blabla.com"> blabla.com</a></p>
+      </div>
+    </div>
+        <section class="conclusion">
+          <div class="container">
+            <h2>Заключение</h2>
+            <p>Синхрония осознаёт сюжетный верлибр.
+        Мифопорождающее текстовое устройство диссонирует лирический субъект.
+        Абстрактное высказывание пространственно просветляет деструктивный символ.
+        Ямб, несмотря на то,
+        что все эти характерологические черты отсылают не к единому образу нарратора,
+        интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест.
+        Контрапункт приводит ритм.</p>
+          </div>
+        </section>
+    <section class="grade grey-bg">
+      <div class="container gride">
+        <h2>Что вы думаете об этой книге?</h2>
+        <h3 class="-h3">Оцените статью</h3>
+        <div class="grade__stars grid"><span>4</span>
+          <ul class="grid">
+            <li><img src="images/svg/stack/sprite.svg#star"/></li>
+            <li><img src="images/svg/stack/sprite.svg#star"/></li>
+            <li><img src="images/svg/stack/sprite.svg#star"/></li>
+            <li><img src="images/svg/stack/sprite.svg#star"/></li>
+            <li><img src="images/svg/stack/sprite.svg#star_grey"/></li>
+          </ul>
+        </div>
+        <form class="grid">
+          <input type="text" placeholder="имя" value=""/>
+          <input type="mail" placeholder="Email" value=""/>
+          <div class="arrow">
+            <select>
+              <option value="Выберите книгу">Выберите книгу</option>
+              <option value="Выберите книгу" selected="selected">Выберите книгу</option>
+              <option value="JavaScript ниндзя">JavaScript ниндзя</option>
+              <option value="Pragmatic Guide to JavaScript">Pragmatic Guide to JavaScript</option>
+              <option value="Pro JavaScript Techniques">Pro JavaScript Techniques</option>
+              <option value="Выразительный JavaScript">Выразительный JavaScript</option>
+            </select>
+          </div>
+          <textarea>Ваш отзыв</textarea>
+        </form>
+      </div>
+    </section>
+        <section class="related_post">
+          <div class="container">
+            <h2>Похожие посты</h2>
+            <div class="grid">
+              <div><img src="/public/images/react-book.webp"/><span>12 декабря</span>
+                <h3>События жизненного цикла ReactJS</h3>
+              </div>
+              <div><img src="/public/images/css-grid-book.webp"/><span>10 декабря</span>
+                <h3>CSS Grids. Полное руководство</h3>
+              </div>
+              <div><img src="/public/images/js-book.webp"/><span>5 декабря</span>
+                <h3>Асинхронность в JavaScript</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+    <div class="popup">
+      <div class="popup__div">
+        <h2>Начать учиться</h2>
+        <p>Оставьте заявку и наш менеджер вам перезвонит.</p>
+        <form>
+          <input type="text" placeholder="Как вас зовут"/>
+          <input type="email" placeholder="Ваш email"/>
+          <button class="blue">Отправить</button>
+        </form>
+        <p class="popup__privacy-policy">Нажимая кнопку «Отправить», вы соглашаетесь с<a href="#">политикой конфиденциальности</a></p>
+        <div class="popup__close">&times;</div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/public/index.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+@import "src/scss/default_variables";
+.popup{
+  background: rgba(32, 35, 38, 0.70);
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transition: all 1s ease-in-out;
+  &.visible{
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+    bottom: 0;
+  }
+  .popup__div{
+    background: #fff;
+    width: 380px;
+    margin: 159px auto;
+    padding: 17px 26px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.05);
+    p{
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 140%; /* 16.8px */
+      letter-spacing: 0.12px;
+    }
+    form {
+      input, button {
+        width: 328px;
+        height: 50px;
+        margin: 22px auto 0;
+        display: block;
+      }
+      input{
+        padding: 3px 15px 18px;
+        border-radius: 10px;
+        border: 1px solid #EDEDF1;
+        background: #FFF;
+      }
+    }
+    p.popup__privacy-policy {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 160%; /* 16px */
+      letter-spacing: 0.1px;
+      text-align: center;
+
+      a {
+        color: $main-blue;
+        display: block;
+      }
+    }
+    .popup__close{
+      position: absolute;
+      top: 12px;
+      right: 17px;
+      font-size: 30px;
+      cursor: pointer;
+      transition: all 1s ease-in-out;
+      &:hover{
+        transform: scale(2);
+      }
+    }
+  }
+}
+@media screen and (max-width: 756px){
+    .popup{
+      .popup__div{
+        max-width: 100%;
+        form {
+          input, button {
+            width: 280px;
+          }
+        }
+    }
+  }
+}

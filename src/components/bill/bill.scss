@@ -1,0 +1,16 @@
+@import "src/scss/default_variables";
+.bill{
+  padding: 60px 0 73px;
+  img{
+    display: block;
+    margin: auto;
+  }
+  p{
+    font-size: 12px;
+    margin: 13px auto 0 64px;
+    a{
+      color: $main-blue;
+      text-decoration: underline;
+    }
+  }
+}

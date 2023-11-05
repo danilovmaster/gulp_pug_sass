@@ -1,0 +1,42 @@
+.server-side-js{
+  padding: 25px 0 80px;
+  p{
+    font-size: 22px;
+    padding: 0 0 0 70px;
+    box-sizing: border-box;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: "";
+      background: url(/pug/public/images/svg/stack/sprite.svg#double-comma) no-repeat;
+      width: 98px;
+      height: 38px;
+      left: -30px;
+      top: 0;
+    }
+  }
+  .server-side-js_author{
+    display: block;
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.16px;
+    margin: 26px 0 0;
+  }
+}
+
+@media screen and (max-width: 756px){
+  .server-side-js p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+    width: 100%;
+    padding: 0;
+    &:before{
+      position: relative;
+      display: block;
+    }
+  }
+}
