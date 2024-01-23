@@ -12,12 +12,12 @@ const concat = require('gulp-concat');
 const map = require('gulp-sourcemaps');
 const bs = require('browser-sync');
 
-export default function style() {
+export default function style_expanded() {
   return src('src/**/*.scss')
     .pipe(map.init())
     .pipe(bulk())
     .pipe(sass({
-      outputStyle: 'compressed'
+      outputStyle: 'expanded'
     }).on('error', sass.logError))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 8 versions'],
@@ -31,10 +31,10 @@ export default function style() {
         'Safari >= 6',
       ],
     }))
-    .pipe(clean({
-			level: 2
-		}))
-		.pipe(concat('style.min.css'))
+    //.pipe(clean({
+		//	level: 0
+		//}))
+		.pipe(concat('style.expanded.css'))
     .pipe(map.write('../soursemaps/'))
     .pipe(dest('public/'))
   .pipe(bs.stream())

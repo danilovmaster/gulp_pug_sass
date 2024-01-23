@@ -1,8 +1,8 @@
 import gulp from 'gulp';
 const { src, dest } = gulp;
+import changed from 'gulp-changed';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const changed = require ('gulp-changed');
 import imagemin, {gifsicle, mozjpeg, optipng, svgo} from 'gulp-imagemin';
 const recompress = require('imagemin-jpeg-recompress');
 const pngquant = require('imagemin-pngquant');
@@ -23,7 +23,7 @@ export default function raster() {
         max: 90,
         quality: "high",
         use: [pngquant({
-          quality: [0.8, 1],
+          quality: [0.95, 1],
           strip: true,
           speed: 1
         })],
