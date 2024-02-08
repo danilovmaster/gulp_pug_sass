@@ -23,9 +23,9 @@ function allFunction() {
       star_span.textContent = index + 1;
       for (let s of star_img){
         if (index < star_img.indexOf(s)){
-          s.src = 'images/svg/stack/sprite.svg#star_grey';
+          s.src = 'images/svg/star_grey.svg';
         } else {
-          s.src = 'images/svg/stack/sprite.svg#star';
+          s.src = 'images/svg/star.svg';
         }
       }
     })
